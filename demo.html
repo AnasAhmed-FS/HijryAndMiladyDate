@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="date.css" rel="stylesheet">
+</head>
+<body>
+<div class=" ">
+   <!--  First section  -->
+   <div class="  can_bg  mb-5" >
+    <div class="bg_to_img">
+       <div class="container">
+               <div class="row">
+                   <h1 class=" mt-5 col-5 text-start"> 
+                       التاريخ الهجري 
+                       Hijri Date
+                   </h1>
+                   <h1 class="fs-1 mt-5 col-1 text-center"> 
+                        / 
+                   </h1>
+                   <h1 class="mt-5   col-5 text-end"> 
+                       التاريخ الميلادي 
+                       Milady Date
+                   </h1>
+               </div>               
+        </div>
+             
+     </div>
+ </div>
+
+ <!-- Second section -->
+   <!-- Milady Date -->
+       <div class="container mt-5 bg_rest_date  ">
+            <div class="row">
+                <h2 class="text-end">
+                   :  باقي من الوقت على  العام الميلادي الجديد
+                </h2>
+                <div class="w-100"></div>
+                <br>
+                <h2 class="text-start">
+                    Time left until 2023:
+                </h2>
+            </div>
+               <table class="table milady_date mt-5 ">
+                        <tr class=" text-center ">
+                           <th class=" fs-2 col-9 " id="days"></th>
+                           <th class="fs-2 col-9" id="hours"></th>
+                           <th class="fs-2 col-9" id="minutes"></th>
+                           <th class=" fs-2 col-9" id="second"></th>
+                       </tr>             
+                       <tr class="mt-3  col-sm-12 ">
+                           <th class=" "> Days</th>
+                           <th class=" ">Hours</th>
+                           <th class="">Minutes</th>
+                           <th class="">Second</th>
+                       </tr>
+ 
+               </table> 
+
+           <!-- <div class="row milady_date ">
+
+                   <div class=" ">
+                       
+                           <div class="row"> 
+                               <div class="col-3">
+                                   <h2 id="days"></h2>
+                               </div>
+                               <div class="col-3">
+                                   <h2 id="hours"></h2>
+                               </div>
+                               <div class="col-3">
+                                   <h2 id="minutes"></h2>
+                               </div>
+                               <div class="col-3">
+                                   <h2 id="second"></h2>
+                               </div>
+                           </div>
+                   </div>
+                   <div class=" ">
+                       <div class="row">
+                            <div class="col-3">
+                               <h6 class=" ">Days</h6>
+                           </div>
+                           <div class="col-3">
+                               <h6  class="">Hours</h6>
+                           </div>
+                           <div class="col-3">
+                               <h6  class="">Minutes</h6>
+                           </div>
+                           <div class="col-3">
+                               <h6  class="">Seconds</h6>
+                           </div>
+                       </div>
+                      
+                   </div>
+           </div> -->
+       </div>
+          
+  <!-- Third section -->
+  <div class=" text-center mt-5 bg_current_date">
+        <h1 class=" mt-5" style="color: rgb(0, 0, 0) ;    display:inline-block;
+        background-color: rgba(255, 255, 255, 0.7);padding: 20px;    border-radius: 20px;
+ "> 
+        Date تاريخ اليوم
+        </h1>
+        <div class="bg_to_img">
+            <table class="table">
+                <tr >
+                    <td id="currentDateDay" scope="col">
+                        
+                    </td>
+                    <th scope="col">   <<< </th>
+
+                    <th scope="col">   Day اليوم</th>
+                </tr>
+                <tr> 
+                    <td id="currentDateHigri">
+                        
+                    </td>
+                    <th scope="col">   <<< </th>
+
+                    <th>
+                    Higri Date   التاريخ الهجري 
+                    </th>
+            
+                </tr>
+                <tr>
+                    <td id="currentDateMilady">
+                        
+                    </td>    
+                    <th scope="col">   <<< </th>
+
+                    <th>
+                    Milady Date   التاريخ الميلادي 
+                    </th>
+                </tr>
+            </table>
+        </div>
+  </div>
+
+  <!-- Fourth -->
+   <!-- Hijri Date -->
+   <div class="container mt-5 bg_rest_date mb-5 ">
+        <div class="row">
+            <h2 class="text-end">
+            :    باقي من الوقت على  العام الهجري الجدبد
+            </h2>
+            <br> <br>
+            <div class="w-100"></div>
+            <br>
+            <h2 class="text-start">
+                Time left until Hijri 1445:
+            </h2>
+        </div>
+       <table class="table milady_date mt-5 ">
+                <tr class=" text-center ">
+                   <th class=" fs-2 col-11 " id="daysHijri"></th>
+                   <th class="fs-2 col-9" id="hoursHijri"></th>
+                   <th class="fs-2 col-9" id="minutesHijri"></th>
+                   <th class=" fs-2 col-9" id="secondHijri"></th>
+               </tr>             
+               <tr class="mt-3  col-sm-12 ">
+                   <th class=" "> Days</th>
+                   <th class=" ">Hours</th>
+                   <th class="">Minutes</th>
+                   <th class="">Second</th>
+               </tr>
+
+        </table> 
+    </div>
+
+</div>
+ 
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="HijriAndMilady.js"></script>
+    <!-- <script src="hjri.js"></script> -->
+</body>
+</html>
