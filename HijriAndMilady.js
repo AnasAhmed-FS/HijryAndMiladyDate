@@ -35,7 +35,7 @@ document.getElementById("second").innerHTML=secondsMilady;
     /*       *********** END milady date script  **********   */
 
     /*       *********** Start Hijri date script  **********   */
-var newDateHijri = new Date(2023,6,18)
+var newDateHijri = new Date(2023,6,19)
 var timeMilleSecondHijri = newDateHijri - oldDate;
 // Days 
 var DaysHijri =parseInt(timeMilleSecondHijri/(24*60*60*1000));
