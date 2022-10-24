@@ -1,35 +1,22 @@
  /**
   * 
   *  The correct  rule about convert date Gregorian to Hijri 
-
+  */ 
  // ميﻻدي
-  const eventa = new Date(2023,0,1,0,0,0);
+  const eventa = new Date('24 oct 2022');
 //Sun Jan 01 2023 00:00:00  يناير  01/2023 اﻻحد
 console.log(eventa) 
 
 // هجري
-const eventSet = new Date(2023,0,1,0,0,0);
+const eventSet = new Date('24 oct 2022');
 //الأحد، ٩ جمادى الثاني ١٤٤٤ هـ في ١٢:٠٠:٠٠ ص
-console.log(eventSet.toLocaleString('ar-u-ca-islamic', {  year: 'numeric', month: 'long', day: 'numeric', weekday: "long", hour: "2-digit", minute: "2-digit",second: "2-digit"
-}));
-  */ 
+console.log(eventSet.toLocaleString('ar-sa', {  year: 'numeric',
+  month: 'long', day: 'numeric', weekday: "long", hour: "2-digit", 
+  minute: "2-digit",second: "2-digit"})
+ );
+
 //******************************************************************** */
-// New date 
-var newDateHijri = new Date(2023,6,18)
-//var resNewHijri = newDateHijri.toLocaleString('ar-u-ca-islamic');
-//console.log(resNewHijri)
-// Old date
-var oldDate = new Date()
-var timeMilleSecond = newDateHijri - oldDate;
-// Days 
-var Days =parseInt(timeMilleSecond/(24*60*60*1000));
-console.log(Days.toLocaleString('ar-u-ca-islamic'))
-// //Hours
-// var hours = Math.floor(timeMilleSecond/(60*60*1000))% 24 
-// //minutes
-// var mins = Math.floor(timeMilleSecond/(60*1000))%60  
-// //Seconds
-// var seconds = parseInt(timeMilleSecond/(1000))%60 
+ 
 
 
 

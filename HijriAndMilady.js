@@ -47,10 +47,10 @@ var minsHijri = Math.floor(timeMilleSecond/(60*1000))%60
 var secondsHijri = Math.floor(timeMilleSecond/(1000))%60 
 
 // Deploy in wep page(HTML)
-document.getElementById("daysHijri").innerHTML=DaysHijri.toLocaleString('en-u-ca-islamic');
-document.getElementById("hoursHijri").innerHTML=timer(hoursHijri.toLocaleString('en-u-ca-islamic'));
-document.getElementById("minutesHijri").innerHTML=timer(minsHijri.toLocaleString('en-u-ca-islamic'));
-document.getElementById("secondHijri").innerHTML=timer(secondsHijri.toLocaleString('en-u-ca-islamic'));
+document.getElementById("daysHijri").innerHTML=DaysHijri.toLocaleString('en-sa');
+document.getElementById("hoursHijri").innerHTML=timer(hoursHijri.toLocaleString('en-sa'));
+document.getElementById("minutesHijri").innerHTML=timer(minsHijri.toLocaleString('en-sa'));
+document.getElementById("secondHijri").innerHTML=timer(secondsHijri.toLocaleString('en-sa'));
 
     /*       *********** END Hijri date script  ********** */  
 // NOTE: The timer is function, please ckeck down 
@@ -93,8 +93,8 @@ function appearCurrentDate(){
 
     // Hijri 
     // Full date (year,month,day,weekday)
-    var resFullDateHijriEn = currentDate.toLocaleString('en-u-ca-islamic', {  year: 'numeric', month: 'long', day: 'numeric',}) 
-    var resFullDateHijriAr = currentDate.toLocaleString('ar-u-ca-islamic', {  year: 'numeric', month: 'long', day: 'numeric',}) 
+    var resFullDateHijriEn = currentDate.toLocaleString('en-sa', {  year: 'numeric', month: 'long', day: 'numeric',}) 
+    var resFullDateHijriAr = currentDate.toLocaleString('ar-sa', {  year: 'numeric', month: 'long', day: 'numeric',}) 
     //console.log(resFullDateHijriar)
     document.getElementById("currentDateHigri").innerHTML=resFullDateHijriEn+" , "+resFullDateHijriAr
 
